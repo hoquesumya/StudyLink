@@ -1,0 +1,3 @@
+[submodule "Composite_Service"]
+	path = Composite_Service
+	url = https://github.com/hoquesumya/COMS-4153-Project-composite-microservice.git
