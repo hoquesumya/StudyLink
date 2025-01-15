@@ -7,3 +7,9 @@
 [submodule "Course_Enrollment_Service"]
 	path = Course_Enrollment_Service
 	url = git@github.com:jeannieMo/COMS-4153-Project-CourseEnrollment-Microservice.git
+[submodule "Chat_service"]
+	path = Chat_service
+	url = git@github.com:jeannieMo/COMS-4153-Project-Chat-Microservice.git
+[submodule "User_service"]
+	path = User_service
+	url = git@github.com:jeannieMo/COMS-4153-Project-User-Microservice.git
