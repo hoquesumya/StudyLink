@@ -4,3 +4,6 @@
 [submodule "UI_StudyLink"]
 	path = UI_StudyLink
 	url = https://github.com/jeannieMo/COMS-4153-Project-UI.git
+[submodule "Course_Enrollment_Service"]
+	path = Course_Enrollment_Service
+	url = git@github.com:jeannieMo/COMS-4153-Project-CourseEnrollment-Microservice.git
