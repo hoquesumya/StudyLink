@@ -13,3 +13,6 @@
 [submodule "User_service"]
 	path = User_service
 	url = git@github.com:jeannieMo/COMS-4153-Project-User-Microservice.git
+[submodule "Study_group"]
+	path = Study_group
+	url = git@github.com:jeannieMo/COMS-4153-Project-SDStudyGroup-Microservice.git
