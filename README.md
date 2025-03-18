@@ -46,5 +46,5 @@ StudyLink is a cloud-based app that delivers a significant improvement in how st
 ## [DEMO](https://drive.google.com/file/d/1ctcgWbEldUpxVzwH6jqTsQsXYTOHrdF_/view)
 
 ## Interactive Operational System
-![Interactive Operational system](assests/Architecture.png)
+![Interactive Operational system](assets/Architecture.png)
 This Repo contains front end and microservices. For More info, follow our [Project Design PDF](https://github.com/hoquesumya/StudyLink/blob/main/Project_design.pdf)
