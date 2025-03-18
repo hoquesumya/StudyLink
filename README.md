@@ -32,5 +32,18 @@ StudyLink is a cloud-based app that delivers a significant improvement in how st
 - <b>User Interaction</b>:Responsile for handling user request. This is the main froentend service, intreagtedd with API gateway along wilt Composite service
 ### Composite Service
 - <b>Aggregatiion and Redirection of requests</b>: This service  calls all the downstream services in both synchronous, asychronous way. Apply service chroreography and orchestration. 
+### Tech Stack
+- <b>Frontend</b>: React + Redux
+- <b>Backend</b> Python FastAPI
+- <b>Databse</b>: MySQL
+### Deployments
+- <b>User Service</b> : EC2
+- <b>Study Group</b>: GCP(DOCKER)
+- <b>Chat Service</b>: GCP(VM)
+- <b>Course Enrollment Service</b>: EC2
+- <b>Composite Service </b>: GCP(PaaS)
+- <b> UI</b>: Google BLOB storage
+### [DEMO](https://drive.google.com/file/d/1ctcgWbEldUpxVzwH6jqTsQsXYTOHrdF_/view)
+
 
 This Repo contains front end and microservices. For More info, follow our [Project Design PDF](https://github.com/hoquesumya/StudyLink/blob/main/Project_design.pdf)
