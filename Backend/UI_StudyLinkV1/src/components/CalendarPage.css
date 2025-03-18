@@ -1,0 +1,174 @@
+.calendar-page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  max-width: 935px;
+  margin: 0 auto;
+  padding: 20px;
+  min-width: 935px;
+  background-color: #fafafa;
+}
+
+.calendar-page h1 {
+  font-size: 28px;
+  font-weight: 300;
+  color: #262626;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-form {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.event-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 8px 12px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.event-form button {
+  background-color: #0095f6;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-form button:hover {
+  background-color: #0081d6;
+}
+
+.delete-confirmation-box {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.delete-confirmation-box h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 15px;
+}
+
+.selected-event-button {
+  background-color: #ed4956;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  margin-right: 10px;
+}
+
+.selected-event-button:hover {
+  background-color: #c62330;
+}
+
+.cancel-button {
+  background-color: #dbdbdb;
+  color: #262626;
+}
+
+.cancel-button:hover {
+  background-color: #c7c7c7;
+}
+
+.rbc-calendar,
+.event-form input[type="datetime-local"],
+.rbc-btn-group,
+.rbc-btn-group button,
+.rbc-toolbar button {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.rbc-calendar {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.rbc-toolbar {
+  padding: 10px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.rbc-toolbar button {
+  background-color: #fff;
+  color: #262626;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.1s ease;
+}
+
+.rbc-toolbar button:hover,
+.rbc-toolbar button.rbc-active {
+  background-color: #fafafa;
+  border-color: #999;
+}
+
+.rbc-month-view,
+.rbc-time-view {
+  border: none;
+}
+
+.rbc-header {
+  padding: 10px;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+
+.rbc-event {
+  background-color: #0095f6;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  padding: 2px 5px;
+}
+
+.rbc-event-content {
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.rbc-today {
+  background-color: #fafafa;
+}
+
+.rbc-off-range-bg {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .event-form {
+    flex-direction: column;
+  }
+
+  .event-form input,
+  .event-form button {
+    width: 100%;
+  }
+}
