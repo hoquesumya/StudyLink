@@ -1,0 +1,48 @@
+main:
+  params: [args]
+  steps:
+    - callGetUserService:
+        call: http.get
+        args:
+          url: ${args.user_url + "/users/" + args.user_id + "/profile"} 
+          timeout: 20
+          headers:
+            Google-Token: ${args.google_token}
+            Authorization: ${args.authorization}
+        result: getResponse
+
+    - checkGetResponse:
+        switch:
+          - condition: ${getResponse.statusCode == 200}
+            next: callDeleteChatService
+          - condition: ${getResponse.statusCode != 200}
+            next: handleError
+
+    - callDeleteChatService:
+        call: http.delete
+        args:
+          url: ${args.chat_url + "/conversations/"+ args.chat_id}
+          headers:
+            Google-Token: ${args.google_token}
+            Authorization: ${args.authorization}
+        result: deleteResponse
+
+    - handleDeleteResponse:
+        switch:
+          - condition: ${deleteResponse.statusCode == 200 or deleteResponse.statusCode == 204}
+            next: returnSuccess
+          - condition: ${deleteResponse.statusCode != 200 and deleteResponse.statusCode != 204}
+            next: handleError
+
+    - returnSuccess:
+        return:
+          message: "Workflow completed successfully."
+          get_response_body: ${getResponse.body}
+          delete_response_status: ${deleteResponse.statusCode}
+
+    - handleError:
+        return:
+          error: "An error occurred during the workflow."
+          get_response_body: ${getResponse.body}
+          delete_response_status: ${deleteResponse.statusCode}
+       
