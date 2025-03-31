@@ -43,7 +43,8 @@ StudyLink is a cloud-based app that delivers a significant improvement in how st
 - <b>Course Enrollment Service</b>: EC2
 - <b>Composite Service </b>: GCP(PaaS)
 - <b> UI</b>: Google BLOB storage
-## [DEMO](https://drive.google.com/file/d/1ctcgWbEldUpxVzwH6jqTsQsXYTOHrdF_/view)
+## DEMO
+Please follow [this]((https://drive.google.com/file/d/1ctcgWbEldUpxVzwH6jqTsQsXYTOHrdF_/view))
 
 ## Interactive Operational System
 ![Interactive Operational system](assets/Architecture.png)
